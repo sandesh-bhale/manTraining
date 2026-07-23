@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>custom_view</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-23 08:58:49</sys_created_on>
+        <sys_id>e4d45bfc83164b1003665b65eeaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom View</sys_name>
+        <sys_package display_value="MAN Training" source="x_2178662_man_tr_0">452ff4188352071003665b65eeaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MAN Training">452ff4188352071003665b65eeaad31b</sys_scope>
+        <sys_update_name>sys_ui_view_e4d45bfc83164b1003665b65eeaad3dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-23 08:58:49</sys_updated_on>
+        <title>Custom View</title>
+        <user/>
+    </sys_ui_view>
+</record_update>
