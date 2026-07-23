@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_2178662_man_tr_0.MANAssetRefQual</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>For Advanced Refrence Qualifier to filter out Software Related CI's</description>
+        <mobile_callable>false</mobile_callable>
+        <name>MANAssetRefQual</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var MANAssetRefQual = Class.create();
+MANAssetRefQual.prototype = {
+    initialize: function() {},
+
+	//Created by : Sandesh Bhale, Created on : 22-07-2026, Purpose : For Advanced Refrence Qualifier to filter out Software Related CI's
+
+    byAssetType: function(current) {
+        var q = 'install_status!=7'; // exclude retired CIs
+        if (current.asset_type == 'software') // narrow to software CIs
+            q += '^sys_class_name=cmdb_ci_spkg';
+        return q; // MUST return an encoded query
+    },
+
+    type: 'MANAssetRefQual'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-22 10:45:30</sys_created_on>
+        <sys_id>d3c12624839e871003665b65eeaad31e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>MANAssetRefQual</sys_name>
+        <sys_package display_value="MAN Training" source="x_2178662_man_tr_0">452ff4188352071003665b65eeaad31b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="MAN Training">452ff4188352071003665b65eeaad31b</sys_scope>
+        <sys_update_name>sys_script_include_d3c12624839e871003665b65eeaad31e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-22 10:54:57</sys_updated_on>
+    </sys_script_include>
+</record_update>

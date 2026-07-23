@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Add an onSubmit Client Script that blocks submit if Estimated Cost is empty when Asset Type is a hardware type (use g_form.addErrorMessage and return false).</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Estimated cost</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+
+	//created by : Sandesh Bhale , Created on : 22-07-2026 , Purpose : onSubmit validation
+
+    var cost = g_form.getValue('estimated_cost');
+    var assetType = g_form.getValue('asset_type');
+	
+    if ((cost.endsWith(';0.00') || cost == '') && assetType != 'software' ) {
+        g_form.addErrorMessage('Estimated cost should not be empty or 0 for asset type of hardware !');
+        return false;
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 13:11:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>370ab5dc831a071003665b65eeaad372</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Estimated cost</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MAN Training" source="x_2178662_man_tr_0">452ff4188352071003665b65eeaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MAN Training">452ff4188352071003665b65eeaad31b</sys_scope>
+        <sys_update_name>sys_script_client_370ab5dc831a071003665b65eeaad372</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-22 05:44:57</sys_updated_on>
+        <table>x_2178662_man_tr_0_man_asset_request</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
