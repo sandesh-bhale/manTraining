@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>When form loads Ageing Days should be hidden</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Hide Ageing Days</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+
+	//Created by : Sandesh Bhale, Created on : 23-07-2026
+	//Purpose : When form loads Ageing Days should be hidden
+
+    if (g_form.isNewRecord()) {
+        g_form.setDisplay('aging_days', false);
+    } else {
+        g_form.setDisplay('aging_days', true);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-23 03:46:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c42d063883da0b1003665b65eeaad345</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Hide Ageing Days</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MAN Training" source="x_2178662_man_tr_0">452ff4188352071003665b65eeaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MAN Training">452ff4188352071003665b65eeaad31b</sys_scope>
+        <sys_update_name>sys_script_client_c42d063883da0b1003665b65eeaad345</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-23 03:49:57</sys_updated_on>
+        <table>x_2178662_man_tr_0_man_asset_request</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

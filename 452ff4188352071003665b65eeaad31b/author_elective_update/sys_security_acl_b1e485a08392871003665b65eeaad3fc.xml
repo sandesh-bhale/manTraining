@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Allow write for all fields in x_2178662_man_tr_0_man_asset_request, for users with role x_2178662_man_tr_0.Man Developer.</description>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_2178662_man_tr_0_man_asset_request.*</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-22 03:53:03</sys_created_on>
+        <sys_id>b1e485a08392871003665b65eeaad3fc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_2178662_man_tr_0_man_asset_request.*</sys_name>
+        <sys_package display_value="MAN Training" source="x_2178662_man_tr_0">452ff4188352071003665b65eeaad31b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MAN Training">452ff4188352071003665b65eeaad31b</sys_scope>
+        <sys_update_name>sys_security_acl_b1e485a08392871003665b65eeaad3fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-22 04:06:55</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MAN Training">452ff4188352071003665b65eeaad31b</application>
+        <file_path/>
+        <instance_id>a098a1a93b706e50c55a348aa4e45a60</instance_id>
+        <instance_name>dev322409</instance_name>
+        <name>sys_security_acl_b1e485a08392871003665b65eeaad3fc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Allow write for all fields in x_2178662_man_tr_0_man_asset_request, for users with role x_2178662_man_tr_0.Man Developer.</description><local_or_existing>Existing</local_or_existing><name>x_2178662_man_tr_0_man_asset_request.*</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-22 03:53:03</sys_created_on><sys_id>b1e485a08392871003665b65eeaad3fc</sys_id><sys_mod_count>3</sys_mod_count><sys_name>x_2178662_man_tr_0_man_asset_request.*</sys_name><sys_package display_value="MAN Training" source="x_2178662_man_tr_0">452ff4188352071003665b65eeaad31b</sys_package><sys_policy/><sys_scope display_value="MAN Training">452ff4188352071003665b65eeaad31b</sys_scope><sys_update_name>sys_security_acl_b1e485a08392871003665b65eeaad3fc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-22 04:06:55</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-1160377320</payload_hash>
+        <record_name>x_2178662_man_tr_0_man_asset_request.*</record_name>
+        <reverted_from/>
+        <source>6620c9988352071003665b65eeaad3ac</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-22 04:06:55</sys_created_on>
+        <sys_id>6268c5e88392871003665b65eeaad3fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f8801506f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-22 04:06:55</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>2268c5e860928710a0346ea370d165fd</update_guid>
+        <update_guid_history>2268c5e860928710a0346ea370d165fd:-1160377320,ace745a848928710bd4050e397587994:2096774824,ab17052868928710da5c4ef001bbd3f8:1993868169,a73501248a928710ce4ea47ee21513c8:-1676478639</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-22 04:07:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>0660f0fd46e1400fa0eb10602a620451</sys_id>
+        <sys_metadata>b1e485a08392871003665b65eeaad3fc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2178662_man_tr_0_man_asset_request.*</sys_name>
+        <sys_package display_value="MAN Training" source="x_2178662_man_tr_0">452ff4188352071003665b65eeaad31b</sys_package>
+        <sys_parent display_value="x_2178662_man_tr_0_man_asset_request">5ad3cd908392071003665b65eeaad38d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="MAN Training">452ff4188352071003665b65eeaad31b</sys_scope>
+        <sys_scope_delete display_value="">2eeab46446404034aac8f5c030091f04</sys_scope_delete>
+        <sys_update_name>sys_security_acl_b1e485a08392871003665b65eeaad3fc</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_b1e485a08392871003665b65eeaad3fc">6268c5e88392871003665b65eeaad3fe</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-22 04:07:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

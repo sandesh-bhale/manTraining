@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ffc706bc839a0b1003665b65eeaad3c1" extends="sys_import_set_row" label="cmdb_StagingTable" max_length="40" name="x_2178662_man_tr_0_cmdb_stagingtable" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ï»¿Name" label="ï»¿Name" max_length="40" name="u_rplcd_n_ascii_298282939" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Serial Number" label="Serial Number" max_length="40" name="u_serial_number" type="string"/>
+    </element>
+</database>

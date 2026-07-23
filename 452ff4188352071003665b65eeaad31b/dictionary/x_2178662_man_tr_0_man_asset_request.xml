@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ded3cd908392071003665b65eeaad388" extends="task" label="MAN Asset Request" max_length="40" name="x_2178662_man_tr_0_man_asset_request" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;//Created by : Sandesh Bhale, Created On : 22-07-2026&#13;&#10;&#9;//Purpose : To Calculate the Aging Days&#13;&#10;&#13;&#10;    var now = new GlideDateTime();&#13;&#10;&#9;var createdDate = new GlideDateTime(current.sys_created_on);&#13;&#10;    var ageInDays = Math.floor(&#13;&#10;        (now.getNumericValue() - createdDate.getNumericValue()) /&#13;&#10;        86400000&#13;&#10;    );&#13;&#10;    return ageInDays; // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Aging (days)" max_length="40" name="aging_days" type="integer" virtual="true"/>
+        <element label="Configuration Item" max_length="32" name="configuration_item" reference="cmdb_ci" reference_qual="javascript:new MANAssetRefQual().byAssetType(current);" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Needed By" max_length="40" name="needed_by" type="glide_date"/>
+        <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element choice="1" label="Asset Type" max_length="40" name="asset_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Monitor" sequence="2" value="monitor"/>
+                <element inactive_on_update="false" label="Laptop" sequence="0" value="laptop"/>
+                <element inactive_on_update="false" label="Desktop" sequence="1" value="desktop"/>
+                <element inactive_on_update="false" label="Software" sequence="4" value="software"/>
+                <element inactive_on_update="false" label="Mobile Phone" sequence="3" value="mobile_phone"/>
+            </choice>
+        </element>
+        <element label="Business Justification" max_length="500" name="business_justification" type="string"/>
+        <element label="Estimated Cost" max_length="40" name="estimated_cost" type="currency"/>
+        <element choice="1" dependent="asset_type" dependent_on_field="asset_type" label="Model" max_length="40" name="model" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="mobile_phone" inactive_on_update="false" label="Samsung Galaxy S24" sequence="7" value="samsung_galaxy_s24"/>
+                <element dependent_value="desktop" inactive_on_update="false" label="HP EliteDesk 800 G9" sequence="3" value="hp_elitedesk_800_g9"/>
+                <element dependent_value="mobile_phone" inactive_on_update="false" label="Apple iPhone 15" sequence="6" value="apple_iphone_15"/>
+                <element dependent_value="laptop" inactive_on_update="false" label="ThinkPad T14" sequence="1" value="thinkpad_t14"/>
+                <element dependent_value="monitor" inactive_on_update="false" label="Lenovo ThinkVision P27h-3" sequence="5" value="lenovo_thinkvision_p27h_3"/>
+                <element dependent_value="software" inactive_on_update="false" label="Adobe Acrobat Pro DC" sequence="9" value="adobe_acrobat_pro_dc"/>
+                <element dependent_value="laptop" inactive_on_update="false" label="Latitude 5540" sequence="0" value="latitude_5540"/>
+                <element dependent_value="desktop" inactive_on_update="false" label="Dell OptiPlex 7010" sequence="2" value="dell_optiplex_7010"/>
+                <element dependent_value="software" inactive_on_update="false" label="Microsoft Office 365" sequence="8" value="microsoft_office_365"/>
+                <element dependent_value="monitor" inactive_on_update="false" label="Dell U2723QE" sequence="4" value="dell_u2723qe"/>
+            </choice>
+        </element>
+    </element>
+</database>
